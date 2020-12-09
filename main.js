@@ -2,7 +2,6 @@ window.onload = function () {
     alert("Hello")
 
     createPTag ();
-    createWrapperAndPtag ();
 }
 
 function createPTag() {
@@ -13,17 +12,14 @@ function createPTag() {
     document.body.appendChild(PTag);
 }
 
-function createWrapperAndPTag() {
+function placePTagInContainer() {
 
-    let wrapper = document.createElement("div");
-    
-    wrapper.id = "wrapper";
-    
-    document.body.appendChild(wrapper);
-    
     let PTag = document.createElement("p"); 
-    
+
     PTag.innerHTML = "Lorem Ipsum";
-    
-    wrapper.appendChild(PTag);    
+
+    let div = document.getElementById("container");
+
+    div.appendChild(PTag);
+
 }
