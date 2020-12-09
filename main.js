@@ -26,4 +26,4 @@ function createWrapperAndPTag() {
     PTag.innerHTML = "Lorem Ipsum";
     
     wrapper.appendChild(PTag);    
-    
+}
